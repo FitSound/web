@@ -24,3 +24,8 @@ p{
     color: #ffffff;
     background-color: #8f42f3;
 }
+.card{
+    margin-left: 18rem;
+    margin-right: 18rem;
+    text-align: center;
+}
