@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sportfit</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/premium.css">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" >
+          <img class="logo" src="images/logo.png"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+
+                  <li class="ctButton">
+                    <a href="premium">
+                        <button type="button" class="btn btn-primary" style="--bs-btn-padding-y: .4rem; --bs-btn-padding-x: .6rem; --bs-btn-font-size: 1.65rem;">
+                          Premium
+                        </button>
+                    </a>
+                </li>
+            </ul>
+            <a href="index.html">
+              <button type="button" class="btn btn-dark">Cerrar sesion</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header> 
+  </head>
+  <body>
+    <div>
+        <p style="text-align: center; font-size: 5rem;"><span class="badge bg-mine">Hola {User}!</span></p>
+        <div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Datos personales
+                    </button>
+                    </h2>
+                    <form class="row g-3">
+                        <div class="col-auto">
+                            <label for="USER" class="visually-hidden">Usuario</label>
+                            <input type="text" readonly class="form-control-plaintext" id="USER" value="{USER}">
+                        </div>
+                        <div class="col-auto">
+                            <label for="inputUser2" class="visually-hidden">newUser</label>
+                            <input type="text" class="form-control" id="inputUser2" placeholder="Nuevo nombre de usuario">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3">Cambiar Usuario</button>
+                        </div>
+                    </form>
+                    <form class="row g-3">
+                        <div class="col-auto">
+                            <label for="EMAIL" class="visually-hidden">Email</label>
+                            <input type="text" readonly class="form-control-plaintext" id="EMAIL" value="{EMAIL}">
+                        </div>
+                        <div class="col-auto">
+                            <label for="inputEmail2" class="visually-hidden">newEmail</label>
+                            <input type="text" class="form-control" id="inputEmail2" placeholder="Nuevo correo electronico">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-3">Cambiar correo</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Seguridad
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <label for="inputPassword5" class="form-label">Nueva contraseña</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                        <div id="passwordHelpBlock" class="form-text">
+                        La contraseña debe tener una longitud de 8 a 20 caracteres, sin emojis ni espacios.
+                        </div>
+                        <form class="row g-3">
+                            <div class="col-auto">
+                              <label for="staticEmail2" class="visually-hidden">Email</label>
+                              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="{email}">
+                            </div>
+                            <div class="col-auto">
+                              <label for="inputPassword2" class="visually-hidden">Password</label>
+                              <input type="password" class="form-control" id="inputPassword2" placeholder="Contraseña actual">
+                            </div>
+                            <div class="col-auto">
+                              <button type="submit" class="btn btn-primary mb-3">Modificar contraseña</button>
+                            </div>
+                          </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Suscripción
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ¿Quiere cancelar su suscripción?
+                        <button type="button" class="btn btn-danger">Cancelar suscripción</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
