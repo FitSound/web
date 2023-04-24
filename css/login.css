@@ -19,7 +19,7 @@ h4{
 }
 
 .login{
-    width: 500px;
+    width: 400px;
     background: white;
     padding: 40px;
     margin: auto;
@@ -79,4 +79,8 @@ body{
 img{
     width: 250px;
     height: 250px;
+}
+
+.error{
+    color: rgb(203, 5, 203);
 }

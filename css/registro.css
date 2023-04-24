@@ -80,3 +80,7 @@ img{
     height: 150px;
     width: 150px;
 }
+
+.error{
+    color: rgb(203, 5, 203);
+}
