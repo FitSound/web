@@ -1,0 +1,81 @@
+@import "styles";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register{
+    width: 450px;
+    background: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    
+    height: 4px{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    p{
+        margin-top: 10px;
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+    }
+    a{
+        color: rgb(0, 0, 0);
+    }
+}
+
+header{
+    text-align: center;
+}
+
+h4{
+    color: black;
+    margin: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.controles{
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    margin:auto ;
+    margin-left: 20%;
+    text-align: center;
+    padding: 4px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+body{
+    @include body-setup;
+}
+
+.botones{
+    width: 80%;
+    padding: 12px;
+    background-color: #d64dd1;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 10%;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}
+
+.error{
+    color: rgb(203, 5, 203);
+}

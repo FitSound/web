@@ -1,0 +1,27 @@
+@import "styles";
+
+img{
+    .welcome{
+        width: 240px;
+        height: 120px; 
+    }
+
+    .logo{
+        @include logo-setup;
+    }
+}
+
+.navbar{
+    background-color: $color-fondo;
+}
+
+body{
+    @include body-setup;
+}
+
+.quienes-somos{
+    float: left;
+    margin-left: 15px;
+    padding: 25px 0;
+    list-style: none;
+}

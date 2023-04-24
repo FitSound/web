@@ -1,0 +1,75 @@
+@import "styles";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+}
+
+.login{
+    width: 500px;
+    background: white;
+    padding: 40px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+
+    h4{
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    p{
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    a{
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+.controles{
+    text-align: center;
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    @include body-setup;    
+}
+
+.botones{
+    width: 80%;
+    padding: 12px;
+    background-color: #d64dd1;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin: 10px;
+    margin-left: 10%;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+.error{
+    color: rgb(203, 5, 203);
+}

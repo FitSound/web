@@ -1,0 +1,16 @@
+@import "styles";
+
+img{
+    .logo{
+        @include logo-setup;
+    }
+}
+
+.navbar{
+    background-color: blueviolet;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(154,84,255,1) 53%, rgba(169,96,255,1) 100%); 
+}

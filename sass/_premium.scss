@@ -1,0 +1,34 @@
+@import "styles";
+
+img{
+    .logo{
+        @include logo-setup;
+    }
+}
+
+.navbar{
+    background-color: rgb(222, 201, 241);
+}
+
+body{
+    @include body-setup;
+}
+
+p{
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.badge{
+    .bg-mine{
+        color: #ffffff;
+        background-color: #8f42f3;
+    }
+}
+
+.card{
+    margin-left: 18rem;
+    margin-right: 18rem;
+    text-align: center;
+}

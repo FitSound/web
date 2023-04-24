@@ -1,0 +1,83 @@
+@import "styles";
+
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: $color-fondo;
+    left: -200px;
+    transition: all 300ms linear;
+
+    .active{
+        left: 0;
+    }
+
+    ul li{
+        list-style-type: none;
+        color: white;
+        text-align: left;
+        padding: 5px;
+        font-weight: bold; 
+    }
+
+    .toggle-btn{
+        position: absolute;
+        left: 230px;
+        top: 20px;
+        cursor: pointer;
+
+        span{
+            display: block;
+            width: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}
+
+header{
+    float: right;
+    clear: both;
+    content: '';
+    width: 100%; 
+    display: table;
+    background: $color-fondo;  
+    @include background();
+}
+
+.encabezado{
+    width: 900px;
+    margin: 10px auto;
+}
+
+nav{
+    float: right;
+
+    ul li{
+        list-style: none;
+        margin-left: 15px;
+        padding: 25px 0;
+        float: left;
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+
+.recomend{
+    text-align: center;
+    float: left;
+    width: 250px;
+    padding: 10px;
+    background-color: $color-fondo;
+    color: white;
+    border: none;
+    margin: 80px 50px;
+    margin-left: 10%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
