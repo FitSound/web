@@ -15,13 +15,22 @@
         </div>
     </head>
     <body>
-        <section class="login">
-            <h4>Inicia Sesión</h4>
-            <input class="controles" type="text" name="usuario" id="usuario" placeholder="Ingrese un Usuario">
-            <input class="controles" type="password" name="contraseña" id="contraseña" placeholder="Ingrese una Contraseña">
-            <p><a href="changepass.html">¿Olvidaste tu contraseña?</a></p>
-            <input class="botones" type="submit" onclick="window.location.href='inicio.html'" value="Iniciar Sesión">
-            <p>¿No tienes cuenta? <a href="registro.html">Registrate</a></p>
-        </section>
+        <form id="formulario">
+            <div class="login">
+                <h4>Inicia Sesión</h4>
+                <input class="controles" type="email" id="email" email="email" required  placeholder="Ingrese un Correo">
+                <input class="controles" type="password" id="password" password="password" required placeholder="Ingrese una Contraseña">
+                <p><a href="changepass.html">¿Olvidaste tu contraseña?</a></p>
+                <input class="botones" type="submit" id="boton" value="Iniciar Sesión">
+                <p>¿No tienes cuenta? <a href="registro.html">Registrate</a></p>
+            </div>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> 
+        <script src="js/traducciones.js"></script>
+        <script src="js/form.js"></script>
+        
     </body> 
 </html>

@@ -18,17 +18,25 @@
     </head>
 
     <body>
-        <section class="register">
-            <h4>Registrate gratis</h4>
-            <input class="controles" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-            <input class="controles" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-            <input class="controles" type="text" name="usuario" id="usuario" placeholder="Ingrese un Usuario">
-            <input class="controles" type="email" name="correo" id="correo" placeholder="Ingrese un Correo">
-            <input class="controles" type="password" name="contraseña" id="contraseña" placeholder="Ingrese una Contraseña">
-            <p>Estoy de acuerdo con<a href="terminos.html"> Terminos y Condiciones</a></p>
-            <input class="botones" type="submit" onclick="window.location.href='inicio.html'" value="Registrar">
-            <p>¿Ya tienes cuenta?<a href="login.html">Inicia Sesión</a></p>
-        </section>
+        <form id="formulario">
+            <div class="register">
+                <h4>Registrate gratis</h4>
+                <input class="controles" type="text" id="name" name="name" required placeholder="Ingrese su Nombre">
+                <input class="controles" type="text" id="subname" name="subname" required placeholder="Ingrese su Apellido">
+                <input class="controles" type="email" id="email" email="email" required  placeholder="Ingrese un Correo">
+                <input class="controles" type="password" id="password" password="password" required placeholder="Ingrese una Contraseña">
+                <p>Estoy de acuerdo con<a href="terminos.html"> Terminos y Condiciones</a></p>
+                <input class="botones" type="submit" id="boton" value="Registrar">
+                <p>¿Ya tienes cuenta?<a href="login.html">Inicia Sesión</a></p>
+            </div>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> 
+        <script src="js/traducciones.js"></script>
+        <script src="js/form.js"></script>
+        
     </body>
     
 </html>
